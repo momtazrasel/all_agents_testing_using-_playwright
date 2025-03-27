@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PlayWright_Cucumber_Automation" />
+        <module name="PlayWright_Java_Cucumber_Updated" />
+        <module name="PlayWright_Cucumber_Java_Automation" />
+        <module name="Playwright_Java_Demowebsho_tricentis-main" />
+        <module name="Playwright_Java_Demowebsho_tricentis" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
