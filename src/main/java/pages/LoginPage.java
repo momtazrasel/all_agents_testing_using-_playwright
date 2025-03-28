@@ -4,6 +4,7 @@ import com.microsoft.playwright.Page;
 import com.aventstack.extentreports.ExtentTest;
 import objects.LoginObject;
 import utilities.BaseTest;
+import utilities.ReusableMethod;
 
 public class LoginPage {
     private final Page page;
@@ -18,7 +19,10 @@ public class LoginPage {
 //        page.navigate("https://staging-submissionpage.ipurvey.com/");
 //    }
     public void loginToApplication() {
-        page.navigate("https://demowebshop.tricentis.com/");
+        page.navigate("https://www.allagents.co.uk/");
+    }
+    public void acceptAllCookies(){
+        ReusableMethod.acceptCookies(LoginObject.ACCEPT_COOKIES);
     }
 
     public void clickLoginLink() {

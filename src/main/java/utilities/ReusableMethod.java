@@ -1,7 +1,10 @@
 package utilities;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+
+import static utilities.BaseTest.page;
 
 public class ReusableMethod {
 
@@ -99,4 +102,15 @@ public class ReusableMethod {
         }
     }
 
+    public static void acceptCookies(String cookieButtonSelector) {
+        Locator acceptCookiesButton = page.locator(cookieButtonSelector);
+
+        // Wait for the button to be visible and click if present
+        if (acceptCookiesButton.isVisible()) {
+            acceptCookiesButton.click();
+            System.out.println("Cookies accepted!");
+        } else {
+            System.out.println("Accept Cookies button not found.");
+        }
+    }
 }

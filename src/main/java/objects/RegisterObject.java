@@ -1,7 +1,9 @@
 package objects;
 
 public class RegisterObject {
+
     public static final String REGISTER_LINK = "(//a[normalize-space()='Register'])[1]";
+    public static final String SIGN_LINK = "(//a[normalize-space()='Sign in'])[1]";
     public static final String REGISTER_FORM = "(//div[@class='center-2'])[1]";
     public static final String GENDER = "(//label[normalize-space()='Male'])[1]";
     public static final String FIRST_NAME = "(//input[@id='FirstName'])[1]";

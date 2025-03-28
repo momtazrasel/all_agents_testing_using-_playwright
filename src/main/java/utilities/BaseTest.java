@@ -36,6 +36,7 @@ public class BaseTest {
     public static void login() {
         LoginPage loginPage = new LoginPage(page, test);
         loginPage.loginToApplication();
+        loginPage.acceptAllCookies();
     }
 
     public static void tearDown() {

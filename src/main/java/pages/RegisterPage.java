@@ -16,7 +16,7 @@ public class RegisterPage extends BaseTest {
         this.test = test;
     }
     public void clickRegisterLink() {
-        page.click(RegisterObject.REGISTER_LINK);
+        page.click(RegisterObject.SIGN_LINK);
     }
     public void fillAllTheRegisterData() {
         page.click(RegisterObject.GENDER);

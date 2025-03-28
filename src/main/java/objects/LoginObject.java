@@ -7,4 +7,5 @@ public class LoginObject {
     public static final String LOGIN_BUTTON = "(//input[@value='Log in'])[1]";
     public static final String LOGIN_ERROR = "(//div[@class='validation-summary-errors'])[1]";
 //    public static final String LOGIN_ERROR = "(//div[@class='validation-summary-errors'])[1]";
+    public static final String ACCEPT_COOKIES = "//button[contains(text(), 'I Accept')]";
 }

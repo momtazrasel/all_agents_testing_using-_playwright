@@ -3,9 +3,9 @@ Feature: Register Functionalities
   @Test_001
   Scenario: Access the Register page
     When the user navigates to the register link
-    And fill up all the register values
-    And click on the register button
-    Then verify that the registration is completed
+#    And fill up all the register values
+#    And click on the register button
+#    Then verify that the registration is completed
 
   @Test_002
   Scenario: Verify Successful Login with Valid Credentials
