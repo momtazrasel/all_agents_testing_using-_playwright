@@ -30,8 +30,8 @@ public class LoginPage {
     }
 
     public void loginWithValidCredentials() {
-        page.fill(LoginObject.USERNAME_INPUT, "xyz@gmail.com");
-        page.fill(LoginObject.PASSWORD_INPUT, "123456");
+        page.fill(LoginObject.USERNAME_INPUT, "momtazrasel7@gmail.com");
+        page.fill(LoginObject.PASSWORD_INPUT, "Abc12345@#");
         test.pass("Login performed successfully.");
     }
     public void loginWithInValidCredentials() {
@@ -41,7 +41,7 @@ public class LoginPage {
     }
 
     public void clickOnLoginButton() {
-        page.click(LoginObject.LOGIN_BUTTON);
+        page.click(LoginObject.SIGN_IN_BUTTON);
         test.pass("Login performed successfully.");
     }
 }

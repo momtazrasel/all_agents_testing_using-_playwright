@@ -17,14 +17,13 @@ public class RegisterPage extends BaseTest {
     }
     public void clickRegisterLink() {
         page.click(RegisterObject.SIGN_LINK);
+        page.click(RegisterObject.REGISTER_LINK);
     }
     public void fillAllTheRegisterData() {
-        page.click(RegisterObject.GENDER);
-        page.fill(RegisterObject.FIRST_NAME, "xyz");
-        page.fill(RegisterObject.LAST_NAME, "xyz");
-        page.fill(RegisterObject.EMAIL, "xyz@gmail.com");
-        page.fill(RegisterObject.PASSWORD, "123456");
-        page.fill(RegisterObject.CONFIRM_PASSWORD, "123456");
+        page.fill(RegisterObject.USER_NAME, "momtazrasel");
+        page.fill(RegisterObject.EMAIL, "momtazrasel7@gmail.com");
+        page.fill(RegisterObject.PASSWORD, "Abc12345@#");
+        page.fill(RegisterObject.CONFIRM_PASSWORD, "Abc12345@#");
 
     }
     public void verifyEmailAlreadyExistsMessage() {
