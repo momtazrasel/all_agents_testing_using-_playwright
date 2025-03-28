@@ -15,9 +15,6 @@ public class LoginPage {
         this.test = test;
     }
 
-//    public void loginToApplication() {
-//        page.navigate("https://staging-submissionpage.ipurvey.com/");
-//    }
     public void loginToApplication() {
         page.navigate("https://www.allagents.co.uk/");
     }
@@ -34,12 +31,6 @@ public class LoginPage {
         page.fill(LoginObject.PASSWORD_INPUT, "Abc12345@#");
         test.pass("Login performed successfully.");
     }
-    public void loginWithInValidCredentials() {
-        page.fill(LoginObject.USERNAME_INPUT, "xyzzs@gmail.com");
-        page.fill(LoginObject.PASSWORD_INPUT, "12345");
-        test.pass("Login performed successfully.");
-    }
-
     public void clickOnLoginButton() {
         page.click(LoginObject.SIGN_IN_BUTTON);
         test.pass("Login performed successfully.");

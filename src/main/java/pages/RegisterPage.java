@@ -26,10 +26,6 @@ public class RegisterPage extends BaseTest {
         page.fill(RegisterObject.CONFIRM_PASSWORD, "Abc12345@#");
 
     }
-    public void verifyEmailAlreadyExistsMessage() {
-        String expectedText = "The specified email already exists";
-        ReusableMethod.verifyTextIsDisplayed(page, test, RegisterObject.EXIST_EMAIL, expectedText, "Email Error Message");
-    }
 
 
 }
